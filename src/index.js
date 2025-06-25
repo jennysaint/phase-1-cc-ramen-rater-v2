@@ -14,6 +14,8 @@ const handleClick = (ramen) => {
 const addSubmitListener = () => {
   // Add code
   const form = document.getElementById('new-ramen');
+  if (!form) return;
+
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
